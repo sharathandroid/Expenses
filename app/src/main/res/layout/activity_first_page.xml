@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#660000"
+    tools:context="com.example.expenses.FirstPage"
+    android:weightSum="1">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="45px"
+    android:textColor="@android:color/white"
+    android:text="This Application Enables User to track their Expenses "/>
+    <Button
+        android:text="Add Invoice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:id="@+id/addexpenses"
+        android:layout_weight="0.03" />
+
+    <Button
+        android:text="View Invoice"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewexpenses"
+
+        android:layout_alignBaseline="@+id/addexpenses"
+        android:layout_alignBottom="@+id/addexpenses"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="0.03"/>
+
+    <Button
+        android:text="Send EMAIL"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addexpenses"
+        android:layout_alignRight="@+id/addexpenses"
+        android:layout_alignEnd="@+id/addexpenses"
+        android:layout_weight="0.03"
+        android:id="@+id/sendmail" />
+    <Button
+        android:text="Export to CSV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addexpenses"
+        android:layout_alignRight="@+id/addexpenses"
+        android:layout_alignEnd="@+id/addexpenses"
+        android:layout_weight="0.03"
+        android:id="@+id/export" />
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_expenses"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#660000"
+    tools:context="com.example.expenses.ViewExpenses">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/cname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search By ClientName"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:width="300dp"/>
+            <Button
+                android:id="@+id/cg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Search By Date"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white"
+                android:width="300dp"/>
+            <Button
+                android:id="@+id/dg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go"/>
+        </LinearLayout>
+
+        <Button
+            android:text="View All Expenses"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewall" />
+
+    </LinearLayout>
+</ScrollView>

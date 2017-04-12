@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#660000"
+    tools:context="com.example.expenses.MainActivity"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <EditText
+        android:layout_margin="10dp"
+        android:id="@+id/et_clientname"
+        android:hint="Enter client name"
+        android:textSize="20dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        />
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_below="@+id/et_clientname"
+        android:id="@+id/et_invoiceid"
+        android:textSize="20dp"
+        android:hint="Enter your invoice number"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <EditText
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:id="@+id/date"
+        android:hint="Select Date"/>
+
+    <EditText
+        android:layout_below="@+id/et_date"
+        android:layout_margin="10dp"
+        android:id="@+id/et_amount"
+        android:hint="Enter amount"
+        android:layout_width="match_parent"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_height="45dp" />
+    <EditText
+        android:layout_below="@+id/et_amount"
+        android:layout_margin="10dp"
+        android:id="@+id/et_description"
+        android:textSize="20dp"
+        android:hint="Enter description of invoice"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <EditText
+        android:layout_below="@+id/et_description"
+        android:id="@+id/et_location"
+        android:textSize="20dp"
+        android:hint="Enter description of invoice"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Expense"
+
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:id="@+id/cb"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Expense"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:id="@+id/cb1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/et_description"
+        android:layout_centerHorizontal="true"
+        android:text="Submit Expense"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" />
+    <Button
+        android:id="@+id/btn_photo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/et_description"
+        android:layout_centerHorizontal="true"
+        android:text="Capture Image of Invoice"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/ImageView1"/>
+
+</LinearLayout>
+</ScrollView>

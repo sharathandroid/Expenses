@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.expenses">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    Read more:
+    http://www.androidhub4you.com/2013/09/send-email-with-attachment-in-android.html#ixzz4OrjxgTYb
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/expenses"
+        android:label="Expenses"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstPage"
+            android:logo="@mipmap/expenses"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:logo="@mipmap/expenses"
+            />
+        <activity android:name=".ViewExpenses"
+            android:logo="@mipmap/expenses"
+            />
+        <activity android:name=".Result"
+            android:logo="@mipmap/expenses"
+            />
+        <activity android:name=".SendingEmail"
+            android:logo="@mipmap/expenses"
+            />
+        <activity android:name=".ClientName"
+            android:logo="@mipmap/expenses"
+            />
+        <activity android:name=".DateSearch"
+            android:logo="@mipmap/expenses"
+            />
+        <activity android:name=".UserDetailList"
+            android:logo="@mipmap/expenses"
+            ></activity>
+    </application>
+
+</manifest>
